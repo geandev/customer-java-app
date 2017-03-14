@@ -1,0 +1,4 @@
+include ':customer-manager-domain'
+project(':customer-manager-domain').projectDir = new File('../customer-manager-domain')
+include ':customer-manager-infra'
+project(':customer-manager-infra').projectDir = new File('../customer-manager-infra')

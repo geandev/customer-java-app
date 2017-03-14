@@ -1,0 +1,25 @@
+<div layout="column" layout-padding>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>
+        <span>Search Customer Manager</span>
+      </h2>
+      <span flex></span>
+      <md-button class="md-raised" aria-label="Learn More" ng-click='vm.getAllCustomers()'>
+        Refresh
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-content class="md-no-momentum">
+    <md-list>
+      <md-subheader class="md-no-sticky">{{vm.customers.length}}</md-subheader>
+      <md-list-item class="md-3-line">
+        <div class="md-list-item-text" layout="column" ng-repeat="customer in vm.customers">
+          <h3>{{customer.name}}</h3>
+          <h4>{{customer.email}}</h4>
+          <p>{{customer.phone}}</p>
+        </div>
+      </md-list-item>
+    </md-list>
+  </md-content>
+</div>

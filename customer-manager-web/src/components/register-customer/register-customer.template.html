@@ -1,0 +1,31 @@
+<div layout="column" layout-padding ng-cloak>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>
+        <span>Register Customer Manager</span>
+      </h2>
+      <span flex></span>
+      <md-button ng-click="vm.registerNewCustomer(vm.customer)" ng-disabled="newCustomerForm.$invalid" class="md-raised" aria-label="Learn More">
+        Add New
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-content class="md-no-momentum">
+    <form name="newCustomerForm">
+      <md-input-container class="md-icon-float md-block">
+        <label>Name</label>
+        <input ng-model="vm.customer.name" type="text" required>
+      </md-input-container>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Email</label>
+        <input ng-model="vm.customer.email" type="email" required>
+      </md-input-container>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Phone</label>
+        <input ng-model="vm.customer.phone" type="tel" required>
+      </md-input-container>
+  </md-content>
+  </form>
+</div>

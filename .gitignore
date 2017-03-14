@@ -1,0 +1,34 @@
+.gradle
+build/
+.vscode/
+*target*
+*.jar
+*.war
+*.ear
+*.class
+*.log*
+*.pid*
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.recommenders/
+Servers/
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch

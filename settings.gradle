@@ -1,0 +1,5 @@
+include 'customer-manager-server-eureka'
+include 'customer-manager-domain'
+include 'customer-manager-infra'
+include 'customer-manager-rest'
+rootProject.name = 'customer-app-spring'
