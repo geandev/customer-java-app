@@ -25,6 +25,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.security.oauth:spring-security-oauth2')
     compile('org.springframework.cloud:spring-cloud-starter-eureka')
     compile project(':customer-manager-domain')
     compile project(':customer-manager-infra')
